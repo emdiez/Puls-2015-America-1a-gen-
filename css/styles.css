@@ -1,3 +1,55 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?qelom7');
+	src:url('fonts/icomoon.eot?#iefixqelom7') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?qelom7') format('truetype'),
+		url('fonts/icomoon.woff?qelom7') format('woff'),
+		url('fonts/icomoon.svg?qelom7#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-circle-down:before {
+	content: "\e600";
+}
+.icon-circle-up:before {
+	content: "\e601";
+}
+.icon-quill:before {
+	content: "\e907";
+}
+.icon-star-empty:before {
+	content: "\e9d7";
+}
+
+@font-face {
+    font-family: 'open_sansCnLtIt';
+    src: url('fonts/OpenSans-CondLightItalic-webfont.eot');
+    src: url('fonts/OpenSans-CondLightItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-CondLightItalic-webfont.woff') format('woff'),
+         url('fonts/OpenSans-CondLightItalic-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-CondLightItalic-webfont.svg#open_sansCnLtIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
 a
 {
 	color: #22BEC0;
@@ -6,9 +58,10 @@ a
 body
 {
 	background: #EEEEEE;
-	font-family: Arial; 
+	font-family: "open_sansCnLtIt";
 	font-size: 16px;
 }
+
 
 footer
 {
@@ -152,6 +205,12 @@ nav ul li a
 	position: relative;
 }
 
+#contenido .item a
+{
+	text-transform: capitalize;
+}
+
+
 
 #contenido .item .author_item
 {
@@ -235,5 +294,4 @@ nav ul li a
 #contenido .item .voting .save_item
 {
 	float: right;
-}
 }
